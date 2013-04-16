@@ -75,3 +75,29 @@ C:\Users\Jake Ellis\Playlister\Feux11\Playlister\Playlister.core\bin\System.Web.
 C:\Users\Jake Ellis\Playlister\Feux11\Playlister\Playlister.core\bin\System.Web.WebPages.Razor.xml
 C:\Users\Jake Ellis\Playlister\Feux11\Playlister\Playlister.core\obj\Debug\Playlister.core.dll
 C:\Users\Jake Ellis\Playlister\Feux11\Playlister\Playlister.core\obj\Debug\Playlister.core.pdb
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\Playlister.core.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\Playlister.core.pdb
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\Newtonsoft.Json.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Net.Http.Formatting.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Helpers.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Http.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Http.WebHost.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Mvc.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Razor.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.WebPages.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.WebPages.Razor.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\Newtonsoft.Json.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Net.Http.Formatting.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Helpers.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Http.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Http.WebHost.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Mvc.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.Razor.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.WebPages.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\bin\System.Web.WebPages.Razor.xml
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\obj\Debug\Playlister.core.csprojResolveAssemblyReference.cache
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\obj\Debug\Playlister.core.dll
+C:\Users\bjbron02\Feux11\Playlister\Playlister.core\obj\Debug\Playlister.core.pdb

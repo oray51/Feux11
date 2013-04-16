@@ -93,8 +93,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PersonTEST.cs" />
+    <Compile Include="Unit Tests\PersonTEST.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit Tests\LoginTEST.cs" />
+    <Compile Include="Unit Tests\ProfileTEST.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
