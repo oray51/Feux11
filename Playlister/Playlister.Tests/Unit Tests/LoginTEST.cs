@@ -35,7 +35,7 @@ namespace Playlister.Tests
         public void TestLoginView()
         {          
             var controller = new AccountController();
-            var result = controller.Login(returnUrl) as ViewResult;
+            var result = controller.Login("/Profile/Login") as ViewResult;
             Assert.AreEqual("Login", result.ViewName);
         }
     }

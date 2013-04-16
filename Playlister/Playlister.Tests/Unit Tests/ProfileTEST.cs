@@ -13,7 +13,7 @@ namespace Playlister.Tests
     public class ProfileTEST
     {
         private ProfileRepo profileRepo;
-
+    
     [TestInitialize]
         public void setup()
     {

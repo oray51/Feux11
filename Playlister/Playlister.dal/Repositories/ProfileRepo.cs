@@ -20,18 +20,18 @@ namespace Playlister.dal.Repositories
 
         public Profile getById(Profile playlisterObject)
         {
-            return _context.Profile.Find(playlisterObject.Profile_ID);
+            return _context.Profiles.Find(playlisterObject.Profile_ID);
 
         }
 
         public Profile[] getAll()
         {
-            return _context.Profile.ToArray();
+            return _context.Profiles.ToArray();
         }
 
         public void add(Profile playlisterObject)
         {
-            _context.Profile.Add(playlisterObject);
+            _context.Profiles.Add(playlisterObject);
             _context.SaveChanges();
         }
 
@@ -44,13 +44,13 @@ namespace Playlister.dal.Repositories
 
         public void remove(Profile playlisterObject)
         {
-            _context.Profile.Remove(playlisterObject);
+            _context.Profiles.Remove(playlisterObject);
             _context.SaveChanges();
         }
 
         public IQueryable<Profile> query(System.Linq.Expressions.Expression<Func<Profile, bool>> filter)
         {
-            return _context.Profile.Where(filter);
+            return _context.Profiles.Where(filter);
         }
     }
 }
