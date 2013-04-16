@@ -17,7 +17,7 @@ namespace Playlister.Tests
     [TestInitialize]
         public void setup()
     {
-        profileRepo = new PersonRepo();
+        profileRepo = new ProfileRepo();
         profileRepo.add(new Profile
         {
             Person_ID = 1,
