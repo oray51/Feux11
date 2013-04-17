@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Search";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+<article>
+    <h3>Search for an artist</h3>
+        <input type="text" id="txt" name="txt" />
+        <input id="artistSearchButton" type="submit" value="Search" />
+    $nbsp;
+    <h4 id="testName">Test Artist Name</h4>
+</article>
+
+<aside>
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("Search", "Search", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>
+</aside>
+
+<script>
+    $(document).ready(function () {
+        $("#artistSearchButton").click(function (event) {
+            event.preventDefault();
+            getArtistSearch(buildUrl(document.getElementById('txt').value));
+            
+        });
+    });
+
+    function buildUrl(artistString) {
+        var url = "http://ws.spotify.com/search/1/artist.json?q=" + artistString;
+        return url;
+    }
+
+    function getArtistSearch(completeUrl) {
+        $.getJSON(completeUrl, null, updateArtistResults);
+    }
+
+    function updateArtistResults(result) {
+        $('testName').val(result.artists[0].name);
+    }
+</script>

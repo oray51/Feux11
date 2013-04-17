@@ -15,9 +15,9 @@ namespace Playlister.web.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Search()
         {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "";
 
             return View();
         }
