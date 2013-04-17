@@ -37,10 +37,10 @@
     }
 
     function getArtistSearch(completeUrl) {
-        $.getJSON(completeUrl, null, updateArtistResults);
+        $.getJSON(completeUrl, null, updateArtistResults(json));
     }
 
-    function updateArtistResults(result) {
-        $('testName').val(result.artists[0].name);
+    function updateArtistResults(data) {
+        $('testName').val(JSON.parse(data));
     }
 </script>
