@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Playlister.dal;
+using Playlister.dal.Repositories;
 
 
 
-namespace Playlister.dal.Repositories
+namespace Playlister.dal
 {
 
     public class ProfileRepo : IRepository<Profile>

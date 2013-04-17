@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Playlister.dal;
 using Playlister.dal.Repositories;
 
-namespace Playlister.Tests
+namespace Playlister.Tests.Repositories
 {
     [TestClass]
     public class ProfileTEST
