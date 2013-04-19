@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Playlister.dal;
-using Playlister.dal.Repositories;
 
-namespace Playlister.dal
+namespace Playlister.dal.Repositories
 {
-
-    public class SongRepo : IRepository<Song>
+    public class SongRepo:IRepository<Song>
     {
+
         private PlaylisterDEV _context = null;
 
         public SongRepo()
@@ -20,7 +19,7 @@ namespace Playlister.dal
         public Song getById(Song playlisterObject)
         {
             return _context.Songs.Find(playlisterObject.Song_ID);
-
+         
         }
 
         public Song[] getAll()
@@ -47,7 +46,7 @@ namespace Playlister.dal
             _context.SaveChanges();
         }
 
-        public IQueryable<Song> query(System.Linq.Expressions.Expression<Func<Person, bool>> filter)
+        public IQueryable<Song> query(System.Linq.Expressions.Expression<Func<Song, bool>> filter)
         {
             return _context.Songs.Where(filter);
         }
