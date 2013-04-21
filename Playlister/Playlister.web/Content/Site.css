@@ -1,13 +1,37 @@
-﻿html {
-    background-color: #e2e2e2;
+﻿
+
+/*Begin sticky footer*/
+
+html, body {
+    height: 100%;
+}
+
+.stickyFooter {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -4.4em;
+}
+
+.push {
+    height: 2em;
+    clear: both;
+}
+/*End sticky footer*/
+
+html {
+    background-color: #fff;
     margin: 0;
     padding: 0;
 }
 
+header {
+    background-color: #666666;
+    height: 80px;
+}
+
 body {
     background-color: #fff;
-    border-top: solid 10px #000;
-    color: #333;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
@@ -24,11 +48,8 @@ a {
 
     a:link, a:visited,
     a:active, a:hover {
-        color: #333;
-    }
-
-    a:hover {
-        background-color: #c7d1d6;
+        color: #7AB800;
+        text-decoration: none;
     }
 
 header, footer, hgroup,
@@ -92,27 +113,35 @@ h5, h6 {
 
 
 /* main layout
-----------------------------------------------------------*/
+----------------------------------------------------------------------------------------------------------------*/
 .content-wrapper {
     margin: 0 auto;
     max-width: 960px;
 }
 
+.center {
+    text-align: center;
+}
+
+.leftIndent {
+    margin-left: 200px;
+}
+
 #body {
-    background-color: #efeeef;
+    background-color: #fff;
     clear: both;
     padding-bottom: 35px;
 }
 
-    .main-content {
+    /*.main-content {
         background: url("../Images/accent.png") no-repeat;
         padding-left: 10px;
-        padding-top: 30px;
-    }
+        padding-top: 30px;  
+    } */
 
-    .featured + .main-content {
+    /*.featured + .main-content {
         background: url("../Images/heroAccent.png") no-repeat;
-    }
+    }  */
 
 header .content-wrapper {
     padding-top: 20px; 
@@ -120,14 +149,21 @@ header .content-wrapper {
 
 footer {
     clear: both;
-    background-color: #e2e2e2;
+    background-color: #333333;
     font-size: .8em;
-    height: 100px;
+    height: 5.5em;
+
 }
+
+   footer p {
+            margin: 20px;
+            color: #fff;
+            font-size: 14px;
+        }
 
 
 /* site title
-----------------------------------------------------------*/
+----------------------------------------------------------------------------------------------------------------*/
 .site-title {
     color: #c8c8c8;
     font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
@@ -144,19 +180,20 @@ footer {
 
 
 /* login
-----------------------------------------------------------*/
+----------------------------------------------------------------------------------------------------------------*/
 #login {
     display: block;
-    font-size: .85em;
-    margin: 0 0 10px;
+    font-size: 1em;
+    /*margin: 0 0 20px;*/
+    margin-top: 13px;
     text-align: right;
 }
 
     #login a {
-        background-color: #d3dce0;
+        background-color: #fff;
         margin-left: 10px;
         margin-right: 3px;
-        padding: 2px 3px;
+        padding: 3px 10px 3px 10px;
         text-decoration: none;
     }
 
@@ -165,6 +202,7 @@ footer {
         margin: 0;
         padding: 0;
         text-decoration: underline;
+        color: #fff;
     }
 
     #login ul {
@@ -178,11 +216,11 @@ footer {
 
 
 /* menu
-----------------------------------------------------------*/
+----------------------------------------------------------------------------------------------------------------*/
 ul#menu {
     font-size: 1.3em;
     font-weight: 600;
-    margin: 0 0 5px;
+    margin: 10px 0 5px;
     padding: 0;
     text-align: right;
 }
@@ -190,23 +228,24 @@ ul#menu {
     ul#menu li {
         display: inline;
         list-style: none;
-        padding-left: 15px;
+        padding-left: 10px;
+        padding-right: 20px;
     }
 
         ul#menu li a {
             background: none;
-            color: #999;
+            color: #fff;
             text-decoration: none;
         }
 
         ul#menu li a:hover {
-            color: #333;
+            color: #7AB800;
             text-decoration: none;
         }
 
 
 /* page elements
-----------------------------------------------------------*/
+----------------------------------------------------------------------------------------------------------------*/
 /* featured */
 .featured {
     background-color: #fff;
@@ -218,7 +257,7 @@ ul#menu {
         background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
         background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+        background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%); 
         color: #3e5667;
         padding: 20px 40px 30px 40px;
     }
@@ -231,13 +270,20 @@ ul#menu {
             font-size: 1.1em;
         }
 
-/* page titles */
+/* page titles 
+    ----------------------------------------------------------------------------------------------------------------*/
 hgroup.title {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 hgroup.title h1, hgroup.title h2 {
     display: inline;
+}
+
+hgroup.title h1 {
+    color: #7AB800;
+    font-size: 36px;
 }
 
 hgroup.title h2 {
@@ -245,14 +291,16 @@ hgroup.title h2 {
     margin-left: 3px;
 }
 
-/* features */
+/* features 
+    ----------------------------------------------------------------------------------------------------------------*/
 section.feature {
     width: 300px;
     float: left;
     padding: 10px;
 }
 
-/* ordered list */
+/* ordered list 
+    ----------------------------------------------------------------------------------------------------------------*/
 ol.round {
     list-style-type: none;
     padding-left: 0;
@@ -303,7 +351,8 @@ ol.round {
             background: url("../Images/orderedList9.png") no-repeat;
         }
 
-/* content */
+/* content 
+    ----------------------------------------------------------------------------------------------------------------*/
 article {
     float: left;
     width: 70%;
@@ -328,7 +377,8 @@ aside {
     font-weight: 700;
 }
 
-/* login page */
+/* login page 
+    ----------------------------------------------------------------------------------------------------------------*/
 #loginForm {
     border-right: solid 2px #c8c8c8;
     float: left;
@@ -380,7 +430,8 @@ aside {
     display: inline;
 }
 
-/* contact */
+/* contact 
+    ----------------------------------------------------------------------------------------------------------------*/
 .contact h3 {
     font-size: 1.2em;
 }
@@ -394,7 +445,8 @@ aside {
     margin: 5px 0 0 10px;
 }
 
-/* forms */
+/* forms 
+    ----------------------------------------------------------------------------------------------------------------*/
 fieldset {
     border: none;
     margin: 0;
@@ -470,7 +522,8 @@ textarea {
         margin-right: 4px;
     }
 
-/* info and errors */
+/* info and errors 
+    ----------------------------------------------------------------------------------------------------------------*/
 .message-info {
     border: 1px solid;
     clear: both;
@@ -496,7 +549,8 @@ textarea {
     color: #e80c4d;
 }
 
-/* styles for validation helpers */
+/* styles for validation helpers 
+    ----------------------------------------------------------------------------------------------------------------*/
 .field-validation-error {
     color: #e80c4d;
     font-weight: bold;
@@ -526,7 +580,7 @@ input[type="checkbox"].input-validation-error {
 
 
 /* tables
-----------------------------------------------------------*/
+----------------------------------------------------------------------------------------------------------------*/
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -587,25 +641,28 @@ tr.pager td {
 }
 
 
-/********************
+/*/********************
 *   Mobile Styles   *
-********************/
+*******************
+    ----------------------------------------------------------------------------------------------------------------
 @media only screen and (max-width: 850px) {
 
     /* header
-    ----------------------------------------------------------*/
+    ----------------------------------------------------------
     header .float-left,
     header .float-right {
         float: none;
     }
 
-    /* logo */
+    /* logo 
+        ----------------------------------------------------------------------------------------------------------------
     header .site-title {
         margin: 10px;
         text-align: center;
     }
 
-    /* login */
+    /* login 
+        ----------------------------------------------------------------------------------------------------------------
     #login {
         font-size: .85em;
         margin: 0 0 12px;
@@ -636,7 +693,8 @@ tr.pager td {
             color: #333;
         }
 
-    /* menu */
+    /* menu 
+        ----------------------------------------------------------------------------------------------------------------
     nav {
         margin-bottom: 5px;
     }
@@ -654,7 +712,7 @@ tr.pager td {
 
 
     /* main layout
-    ----------------------------------------------------------*/
+    ----------------------------------------------------------------------------------------------------------------
     .main-content,
     .featured + .main-content {
         background-position: 10px 0;
@@ -669,13 +727,15 @@ tr.pager td {
         padding: 10px;
     }
 
-    /* page content */
+    /* page content 
+        ----------------------------------------------------------------------------------------------------------------
     article, aside {
         float: none;
         width: 100%;
     }
 
-    /* ordered list */
+    /* ordered list 
+        ----------------------------------------------------------------------------------------------------------------
     ol.round {
         list-style-type: none;
         padding-left: 0;
@@ -699,7 +759,8 @@ tr.pager td {
                 background: none;
             }
 
-     /* features */
+     /* features 
+         ----------------------------------------------------------------------------------------------------------------
      section.feature {
         float: none;
         padding: 10px;
@@ -713,12 +774,14 @@ tr.pager td {
             font-weight: 600;
         }
 
-    /* forms */
+    /* forms 
+        ----------------------------------------------------------------------------------------------------------------
     input {
         width: 90%;
     }
 
-    /* login page */
+    /* login page 
+        ----------------------------------------------------------------------------------------------------------------
     #loginForm {
         border-right: none;
         float: none;
@@ -738,7 +801,7 @@ tr.pager td {
 
 
     /* footer
-    ----------------------------------------------------------*/
+    ----------------------------------------------------------------------------------------------------------------
     footer .float-left,
     footer .float-right {
         float: none;
@@ -751,6 +814,10 @@ tr.pager td {
     }
 
         footer p {
-            margin: 0;
+            margin: 40px;
+            color: #fff;
+            font-size: 14px;
         }
-}
+} */
+
+

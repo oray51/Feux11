@@ -22,7 +22,12 @@ namespace Playlister.web.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Music()
+        {
+            return View();
+        }
+
+        public ActionResult Help()
         {
             ViewBag.Message = "Your contact page.";
 
